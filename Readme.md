@@ -1,6 +1,7 @@
 # Kuesta
 
 ## Overview
+
 **Kuesta** adalah aplikasi mobile yang ditujukan untuk pengidap kusta, dengan fokus pada pendampingan pasien selama proses pengobatan. Aplikasi ini dirancang sebagai *support system* yang membantu deteksi dini, kepatuhan konsumsi obat, pencatatan berobat, serta penyediaan edukasi dan motivasi.
 
 Kuesta tidak menggantikan peran tenaga medis. Seluruh fitur bersifat pendukung dan tetap merekomendasikan pemeriksaan lanjutan oleh dokter spesialis kulit dan kelamin (Sp.DVE).
@@ -8,6 +9,7 @@ Kuesta tidak menggantikan peran tenaga medis. Seluruh fitur bersifat pendukung d
 ---
 
 ## Objectives
+
 - Mendukung **deteksi dini kusta** sebagai langkah awal kesadaran
 - Membantu pasien menjaga **kepatuhan pengobatan jangka panjang**
 - Menyediakan sarana pencatatan dan pengingat berobat
@@ -28,7 +30,7 @@ Kuesta tidak menggantikan peran tenaga medis. Seluruh fitur bersifat pendukung d
   - Usia pasien
   - Jenis kusta (**PB / MB**)
 - Penjadwalan konsumsi obat jangka panjang
-- **Real-time notification** untuk pengingat konsumsi obat
+- **Real-time notification** untuk pengingat minum obat
 
 ### Medical Notes & Reminders
 - Pencatatan aktivitas dan riwayat berobat
@@ -49,14 +51,77 @@ Kuesta tidak menggantikan peran tenaga medis. Seluruh fitur bersifat pendukung d
 
 ## Screenshots
 
-Letakkan file screenshot pada folder `/screenshots` di root repository.
+Letakkan screenshot UI aplikasi pada folder `/screenshots`.
+
+screenshots/  
+├── onboarding.png  
+├── early_detection.png  
+├── medication_schedule.png  
+├── notification.png  
+├── notes.png  
+├── motivation.png  
+└── community.png  
+
+### Application Preview
+
+| Feature             | Screenshot                                          |
+|---------------------|-----------------------------------------------------|
+| Onboarding          | ![Onboarding](screenshots/onboarding.png)           |
+| Early Detection     | ![Early Detection](screenshots/early_detection.png) |
+| Medication Schedule | ![Medication](screenshots/medication_schedule.png)  |
+| Notification        | ![Notification](screenshots/notification.png)       |
+| Notes               | ![Notes](screenshots/notes.png)                     |
+| Motivation          | ![Motivation](screenshots/motivation.png)           |
+| Community           | ![Community](screenshots/community.png)             |
+
+---
+
+## Technical Stack
+
+- **Framework**: Flutter
+- **State Management**: GetX
+- **Design Pattern**: Model–View–Controller (MVC)
+- **Navigation & Dependency Binding**: GetX
+- **Notification**: Local Notification (Scheduled & Real-time)
+
+---
+
+## Architecture & Design Pattern
+
+Aplikasi ini menggunakan **Model–View–Controller (MVC)** dengan pendekatan arsitektur yang mengikuti **best practice GetX**.
+
+Pendekatan ini memastikan:
+- Pemisahan tanggung jawab yang jelas
+- Pengelolaan state yang terkontrol
+- Kode yang mudah dipelihara
+
+### Layer Responsibilities
+- **Model**: Representasi data dan struktur domain
+- **View**: UI layer dengan widget ringan dan reusable
+- **Controller**: State management dan alur logika aplikasi
+
+---
+
+## Project Structure
 
 ```text
-screenshots/
-├── onboarding.png
-├── early_detection.png
-├── medication_schedule.png
-├── notification.png
-├── notes.png
-├── motivation.png
-└── community.png
+lib/
+├── data/
+│   ├── api_service/
+│   └── repository/
+├── modules/
+│   ├── detection/
+│   ├── medication/
+│   ├── notes/
+│   ├── motivation/
+│   ├── article/
+│   └── community/
+├── models/
+├── controllers/
+├── bindings/
+├── utils/
+│   ├── images/
+│   ├── colors/
+│   ├── widgets/
+│   └── extensions/
+└── main.dart
