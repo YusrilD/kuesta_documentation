@@ -66,10 +66,10 @@ screenshots/
 
 | Feature             | Screenshot                                          |
 |---------------------|-----------------------------------------------------|
-| Onboarding          | ![Onboarding](screenshots/onboarding.png)           |
+| Onboarding          | ![Onboarding](screenshots/dashboard.jpeg)           |
 | Early Detection     | ![Early Detection](screenshots/early_detection.png) |
-| Medication Schedule | ![Medication](screenshots/medication_schedule.png)  |
-| Notification        | ![Notification](screenshots/notification.png)       |
+| Medication Schedule | ![Medication](screenshots/medication.jpeg)          |
+| Notification        | ![Notification](screenshots/notifications.jpeg)     |
 | Notes               | ![Notes](screenshots/notes.png)                     |
 | Motivation          | ![Motivation](screenshots/motivation.png)           |
 | Community           | ![Community](screenshots/community.png)             |
