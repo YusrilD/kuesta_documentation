@@ -2,67 +2,54 @@
 
 ## Overview
 
-**Kuesta** adalah aplikasi mobile yang ditujukan untuk pengidap kusta, dengan fokus pada pendampingan pasien selama proses pengobatan. Aplikasi ini dirancang sebagai *support system* yang membantu deteksi dini, kepatuhan konsumsi obat, pencatatan berobat, serta penyediaan edukasi dan motivasi.
+**Kuesta** is a mobile application designed for individuals affected by leprosy, with a primary focus on patient assistance throughout the treatment process. The application is built as a *support system* to aid early detection awareness, long-term medication adherence, medical record tracking, and the delivery of educational and motivational content.
 
-Kuesta tidak menggantikan peran tenaga medis. Seluruh fitur bersifat pendukung dan tetap merekomendasikan pemeriksaan lanjutan oleh dokter spesialis kulit dan kelamin (Sp.DVE).
+Kuesta does not replace the role of medical professionals. All features are intended as supportive tools and consistently recommend further examination by a certified dermatologist and venereologist (Sp.DVE).
 
 ---
 
 ## Objectives
 
-- Mendukung **deteksi dini kusta** sebagai langkah awal kesadaran
-- Membantu pasien menjaga **kepatuhan pengobatan jangka panjang**
-- Menyediakan sarana pencatatan dan pengingat berobat
-- Memberikan edukasi dan motivasi yang berkelanjutan
-- Memfasilitasi akses ke komunitas pendukung
+- Support **early awareness and detection of leprosy**
+- Assist patients in maintaining **long-term treatment adherence**
+- Provide tools for medical notes and treatment reminders
+- Deliver continuous education and motivation
+- Facilitate access to supportive communities
 
 ---
 
 ## Core Features
 
 ### Early Detection Support
-- Screening berbasis input gejala
-- Hasil bersifat indikatif (bukan diagnosis)
-- Rekomendasi pemeriksaan lanjutan oleh **Sp.DVE**
+- Symptom-based screening input
+- Indicative results only (not a medical diagnosis)
+- Recommendation for further examination by **Sp.DVE**
 
 ### Medication Management
-- Penggolongan dosis berdasarkan:
-  - Usia pasien
-  - Jenis kusta (**PB / MB**)
-- Penjadwalan konsumsi obat jangka panjang
-- **Real-time notification** untuk pengingat minum obat
+- Dose classification based on:
+  - Patient age
+  - Leprosy type (**PB / MB**)
+- Long-term medication scheduling
+- **Real-time notifications** for medication reminders
 
 ### Medical Notes & Reminders
-- Pencatatan aktivitas dan riwayat berobat
-- Pengingat jadwal kontrol atau tindak lanjut
+- Logging of medical activities and treatment history
+- Reminders for follow-up visits and scheduled controls
 
 ### Expert Motivation
-- Konten motivasi dari dokter spesialis (Sp.DVE)
-- Mendukung konsistensi dan kondisi mental pasien
+- Motivational content provided by certified specialists (Sp.DVE)
+- Supports patient consistency and mental well-being
 
 ### Educational Content
-- Artikel seputar kusta untuk pasien dan keluarga
+- Articles related to leprosy for patients and their families
 
 ### Community Access
-- Daftar komunitas pendukung
-- Integrasi **WebView** ke website atau akun media sosial komunitas
+- Directory of support communities
+- **WebView** integration with community websites or social media platforms
 
 ---
 
-## Screenshots
-
-Letakkan screenshot UI aplikasi pada folder `/screenshots`.
-
-screenshots/  
-├── onboarding.png  
-├── early_detection.png  
-├── medication_schedule.png  
-├── notification.png  
-├── notes.png  
-├── motivation.png  
-└── community.png  
-
-### Application Preview
+## Application Preview
 
 | Feature             | Screenshot                                          |
 |---------------------|-----------------------------------------------------|
@@ -82,29 +69,30 @@ screenshots/
 - **State Management**: GetX
 - **Design Pattern**: Model–View–Controller (MVC)
 - **Navigation & Dependency Binding**: GetX
-- **Notification**: Local Notification (Scheduled & Real-time)
+- **Notification**: Local Notifications (Scheduled & Real-time), Firebase
 
 ---
 
 ## Architecture & Design Pattern
 
-Aplikasi ini menggunakan **Model–View–Controller (MVC)** dengan pendekatan arsitektur yang mengikuti **best practice GetX**.
+The application adopts a **Model–View–Controller (MVC)** architecture following **GetX best practices**.
 
-Pendekatan ini memastikan:
-- Pemisahan tanggung jawab yang jelas
-- Pengelolaan state yang terkontrol
-- Kode yang mudah dipelihara
+This approach ensures:
+- Clear separation of responsibilities
+- Controlled and predictable state management
+- Code that is maintainable and scalable
 
 ### Layer Responsibilities
-- **Model**: Representasi data dan struktur domain
-- **View**: UI layer dengan widget ringan dan reusable
-- **Controller**: State management dan alur logika aplikasi
+
+- **Model**: Data representation and domain structures
+- **View**: UI layer composed of lightweight, reusable widgets
+- **Controller**: Application logic, state handling, and workflow orchestration
 
 ---
 
 ## Project Structure
 
-```text
+```
 lib/
 ├── data/
 │   ├── api_service/
@@ -125,3 +113,13 @@ lib/
 │   ├── widgets/
 │   └── extensions/
 └── main.dart
+```
+
+---
+
+## Closure
+
+Kuesta is developed with a strong emphasis on clarity, maintainability, and real-world applicability.  
+The project reflects a structured engineering approach that prioritizes user support, architectural consistency, and long-term sustainability, particularly within sensitive healthcare-related domains.
+
+This documentation represents a commitment to professional software engineering practices, focusing on clear system design, thoughtful feature planning, and maintainable code structure.
