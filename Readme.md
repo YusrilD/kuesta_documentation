@@ -55,7 +55,7 @@ Kuesta does not replace the role of medical professionals. All features are inte
 |---------------------|-----------------------------------------------------|
 | Onboarding          | ![Onboarding](screenshots/dashboard.jpeg)           |
 | Early Detection     | ![Early Detection](screenshots/early_detection.jpeg)|
-| Medication Schedule | ![Medication](screenshots/screenshots/notes.jpeg)   |
+| Medication Schedule | ![Medication](screenshots/notes.jpeg)   |
 | Notification        | ![Notification](screenshots/notifications.jpeg)     |
 | Motivation          | ![Motivation](screenshots/motivasi.jpeg)            |
 | Community           | ![Community](screenshots/community.jpeg)            |
