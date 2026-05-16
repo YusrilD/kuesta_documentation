@@ -53,12 +53,12 @@ Kuesta does not replace the role of medical professionals. All features are inte
 
 | Status             | QR Code | Access Link |
 |--------------------|---------|-------------|
-| Active  | ![QR](path/qrcodegps.png) | https://play.google.com/store/apps/details?id=com.dpplab.kuesta&pcampaignid=web_share|
+| Active  | ![QR](screenshots/qrcodegps.png) | https://play.google.com/store/apps/details?id=com.dpplab.kuesta&pcampaignid=web_share|
 
 ## Appstore
 | Status             | QR Code | Access Link |
 |--------------------|---------|-------------|
-| Active  | ![QR](path/qrcodeas.png) | https://apps.apple.com/id/app/kuesta-edukasi-rawat-kusta/id6757728496|
+| Active  | ![QR](screenshots/qrcodeas.png) | https://apps.apple.com/id/app/kuesta-edukasi-rawat-kusta/id6757728496|
 
 ---
 
